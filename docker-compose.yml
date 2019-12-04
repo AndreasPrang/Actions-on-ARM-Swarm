@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+  db:
+    image: github_worker
+    restart: always
+    deploy:
+      mode: global
+    environment:
+      TOKEN: ${TOKEN}
+
