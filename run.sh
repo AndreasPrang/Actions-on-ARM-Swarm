@@ -1,3 +1,5 @@
 #/bin/bash
 
-docker build -t github_worker .
+./buildImage.sh
+
+docker stack deploy --compose-file docker-compose.yml ACTIONS
