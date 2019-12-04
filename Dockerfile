@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-RUN apk add --update curl
+RUN apk add --update curl git
 
 RUN mkdir actions-runner && cd actions-runner
 WORKDIR actions-runner
