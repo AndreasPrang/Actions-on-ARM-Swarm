@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source .env
+yes "" | ./config.sh --url https://github.com/AndreasPrang/test-build-on-arm --token ${TOKEN}
 
-./config.sh --url https://github.com/AndreasPrang/test-build-on-arm --token $TOKEN
 ./run.sh

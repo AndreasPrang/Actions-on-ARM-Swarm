@@ -2,10 +2,12 @@ version: '3.2'
 
 services:
   worker:
-    image: github_worker
+    image: andreasprang/github_worker
+    privileged: true
     restart: always
     deploy:
       mode: global
     environment:
-      TOKEN: ${TOKEN}
-
+      TOKEN: TOKEN-VALUE
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock

@@ -1,3 +1,4 @@
 #/bin/bash
 
-docker build -t github_worker .
+docker build -t andreasprang/github_worker .
+

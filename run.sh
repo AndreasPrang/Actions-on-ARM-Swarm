@@ -2,4 +2,6 @@
 
 ./buildImage.sh
 
-docker stack deploy --compose-file docker-compose.yml ACTIONS
+source .env
+
+cat docker-compose.yml | sed "s/TOKEN-VALUE/${TOKEN}/g" | docker stack deploy --compose-file - ACTIONS
