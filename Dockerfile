@@ -18,7 +18,7 @@ FROM debian:buster
 #CMD /actions-runner/run_worker.sh
 
 
-ARG GH_RUNNER_VERSION="2.161.0"
+ARG GH_RUNNER_VERSION="2.165.0"
 ARG DOCKER_COMPOSE_VERSION="1.24.1"
 
 ENV RUNNER_NAME=""
